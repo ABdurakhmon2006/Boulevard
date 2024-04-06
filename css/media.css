@@ -1,0 +1,76 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .nav__burger {
+        display: block;
+        order: 1;
+    }
+
+    .menu {
+        position: absolute;
+        left: 100px;
+        top: 100%;
+        background: #000;
+        border: 1px solid #282828;
+        flex-direction: column;
+        min-width: 150px;
+        gap: 0;
+        visibility: hidden;
+    }
+
+    .menu li {
+        padding: 12px;
+        width: 100%;
+        border-bottom: 1px solid #282828;
+    }
+
+    .nav__burger:focus ~ .menu {
+        visibility: visible;
+    }
+
+
+    .airpods__divided, .airpods__airpodspro, .airpods__sensor {
+        flex-direction: column;
+
+    }
+
+    .divided__desc, .airpodspro__desc, .sensor__desc, .sensor__desc_text-align {
+        text-align: center;
+    }
+
+    .product__content {
+        justify-content: space-around;
+    }
+
+    .card {
+        max-width: 291px;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .footer__content {
+        gap: 4px;
+    }
+
+    .header__title {
+        font-size: 85px;
+    }
+
+}
